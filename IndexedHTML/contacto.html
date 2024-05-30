@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="es">
+	<title>Landing page</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/style-form.css">
+</head>
+<body>
+	<header class="first-header">
+		<nav>
+			<ul>
+				<li><a href="index2.html">INICIO</a></li>
+				<li><a href="servicios.html">SERVICIOS</a></li>
+				<li><a href="acercade.html">ACERCA DE</a></li>
+				<li><a href="#">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>CONTACTO</h1>
+	<form action="index2.html" method="post">
+		<fieldset>
+			<legend>Ingresa los datos del usuario</legend>
+			<label>Username</label>
+			<input type="text" name="username" placeholder="nombre del usuario" required>
+			<label>Password</label>
+			<input type="Password" name="pass" placeholder="ingresa tu contra" required>
+			<label>email</label>
+			<input type="email" name="user-email" placeholder="tuemail@tudominio.com" required>
+			<label>edad</label>
+			<input type="radio" name="edad" value="menor-18" required><label>Menor de edad</label>
+			<input type="radio" name="edad" value="mayor-18" required><label> Mayor de edad</label>
+		</fieldset>
+		<fieldset>
+			<legend>Perfil</legend>
+			<label>Escribe algo sobre ti</label>
+			<textarea name="user-profile" placeholder="Me gusta mucho salir al parque"></textarea>
+			<select>
+				<optgroup label="CUCEI">
+					<option value="computacion">Compu</option>
+					<option value="informatica">info</option>
+					<option value="electronica">focos</option>
+				</optgroup>
+				<optgroup label="CUCBA">
+					<option value="agronomia">agro</option>
+					<option value="veterinaria">zootec</option>
+					<option value="biologia">bio</option>
+				</optgroup>
+			</select>
+			<label>Selecciona tus intereses</label>
+				<input type="checkbox" name="videojuegos"><label>Video Juegos</label>
+				<input type="checkbox" name="deportes"><label>Deportes</label>
+				<input type="checkbox" name="musica"><label>Musica</label>
+				<input type="checkbox" name="baile"><label>Danza</label>
+		</fieldset>
+		<fieldset>
+			<legend>Ingresa otros datos</legend>
+			<label>Ingresa la fecha en la que comenzaste a chambear</label>
+			<input type="date" name="carrera-date" required>
+			<label>Ingresa tu numero del cel</label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+		</fieldset>
+		<button type="submit">Registrar usuario</button>
+	</form>
+	<h1>FIN DEL FORM</h1>
+</body>
+</html>

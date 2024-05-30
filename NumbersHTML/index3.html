@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<script>
+		//variable de alcance global
+		var mensaje = "hola ";
+		//variable local
+		let otromensaje ='mundo';
+		console.log(mensaje+otromensaje);//solo se va a ver en inspect-console
+		
+
+		mensaje="10";
+		otromensaje="20";
+		console.log(mensaje+otromensaje);
+
+		mensaje="10";
+		otromensaje=20;
+		console.log(mensaje+otromensaje);
+		console.log(mensaje-otromensaje);
+		console.log(mensaje*otromensaje);
+		console.log(mensaje/otromensaje);
+		console.log(mensaje%otromensaje);
+
+		console.log(mensaje>otromensaje);
+		console.log(mensaje<otromensaje);
+		console.log(mensaje>=otromensaje);
+		console.log(mensaje<=otromensaje);
+		console.log(mensaje!=otromensaje);
+		console.log(mensaje==otromensaje);
+		console.log(mensaje===otromensaje);//son iguales hasta el tipo de dato
+
+		numero=10;
+		if(numero>10){
+			console.log("El numero es mayor a 10");
+
+		}else if(numero==10){
+			console.log("El numero es 10");
+		}else{
+			console.log("El numero es menor a 10");
+		}
+		let numero3=20;
+		switch(numero3){
+		case 10: console.log("El valor es 10");break;
+		case 20: console.log("El valor es 20");break;
+		case 30: console.log("El valor es 30");break;
+		default: console.log("No es ninguno de los valores evaluados");
+		}
+
+		for(let indice=0;indice<10;indice++){
+			console.log(indice);
+		}
+
+		let indice=10;
+		do{
+			console.log(indice--);
+		}while(indice>0);
+
+		while(indice<10){
+			console.log(++indice);
+		}
+
+		function botonPresionado(){
+			console.log("Me estas presionandoooo!!!");
+		}
+	</script>
+</head>
+<body>
+	<button onclick="botonPresionado()">Presioname!!</button>
+</body>
+</html>
