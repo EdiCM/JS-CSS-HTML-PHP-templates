@@ -1,0 +1,14 @@
+body{
+	color:indianred;
+	font-family:'Nunito' hans-serif;
+}
+form{
+	max-width:50%;
+	margin:10px auto;
+	padding: 10px 20px;
+	background: beige;
+	border-radius: 10px;
+}
+input{
+	backgorund-color: rgba();
+}

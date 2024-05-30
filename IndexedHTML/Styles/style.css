@@ -1,0 +1,97 @@
+body{
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+.first-header{
+	background-color: lightpink;
+	color: black;
+	padding: 10px;
+
+}
+
+nav ul{
+	list-style:none;
+	display: flex;
+	justify-content: center;
+
+}
+
+nav a{
+	color: white;
+	decoration: none;
+	margin: 20px;
+}
+
+.principal{
+	text-align: center;
+	padding: 100px;
+	background-color: indianred;
+	background-image: url("../img2/portada.png");
+	background-size:cover;
+}
+.principal h1{
+	font-size: 50px;
+	margin: 20px;
+}
+.contacto-button{
+	display: inline-block;
+	background-color: darkgrey;
+	color: white;
+	padding: 20px 40px;
+	border-radius: 30px;
+	text-decoration: none;
+}
+.caracteristicas{
+	display: flex;
+	justify-content: space-around;
+	padding: 40px 0;
+	background-color: antiquewhite;
+}
+.caracteristica{
+	text-align: center;
+	width: 30%;
+	background-color: saddlebrown;
+	padding: 20px
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+.caracteristica-img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+img{
+	max-width:100%;
+	height: auto;
+}
+footer{
+	text-align:center;
+	background-color: #ccc;
+	padding: 10px 0;
+	color:white;
+	font-size: 10px;
+}
+.ver-mas-boton{
+    text-decoration: none;
+    background-color: #353C32;
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.img_caracteristica1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+article img{
+    max-width: 100%;
+    height: auto;
+}
